@@ -63,7 +63,16 @@ variable "managed_rules" {
       override_action      = "none"
       vendor_name          = "AWS"
       rule_action_override = []
-    }
+      scope_down_statement = null
+    },
+    {
+      name                 = "AWSManagedRulesAnonymousIpList",
+      priority             = 70
+      override_action      = "none"
+      vendor_name          = "AWS"
+      rule_action_override = []
+      scope_down_statement = null
+    },
   ]
 }
 
