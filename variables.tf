@@ -20,7 +20,7 @@ variable "managed_rules" {
       action_to_use = string # e.g., "allow", "block", "count"
     })), [])
     scope_down_statement = optional(object({
-      ip_set_arn = optional(string)
+      ip_set_arn = string
     }), null)
   }))
 
